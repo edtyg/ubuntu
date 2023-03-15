@@ -14,4 +14,4 @@ exit 						# close terminal session
 sudo reboot					# restart system
 sudo shutdown				# shutdown
 
-uname						# system name
+uname						# system name, not user name

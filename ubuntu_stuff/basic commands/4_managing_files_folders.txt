@@ -5,7 +5,7 @@ mkdir folder_name/folder_name 		# creates folder in another folder in current di
 
 rm filename  					# delete files
 rmdir dirname 					# delete folders/directories
-rm -r foldername					# delete folder and all files inside
+rm -r foldername					# delete folder and all files inside - !!! careful with this
 
 sudo touch filename.txt				# creates a file
-sudo nano filename				# opens file and allows you to edit it
+sudo nano filename.txt				# opens file and allows you to edit it

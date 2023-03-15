@@ -3,7 +3,10 @@ passwd	# change your password
 
 
 ##############################################################
-files and folders permissions
+
+#####################################
+### files and folders permissions ###
+#####################################
 
 --------- (total 9 dashes)
 owner-group-other
@@ -30,7 +33,6 @@ ls -l foldername 													# prints out all permission info of files in the f
 
 chmod ugo+rwx foldername/filename										# for owners,groups,others give read,write,execute
 chmod ugo-x foldername/filename 										# for ownsers,groups,others remove execute
-
 
 
 ##############################################################

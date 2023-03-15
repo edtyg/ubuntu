@@ -4,5 +4,5 @@ need to enable port forwarding
 log in to router
 then set up portforwarding
 
-from external source's public ip address
+allow connections from external source's public ip address (and port)
 and forward port of external source to local system (specific device) and port 
