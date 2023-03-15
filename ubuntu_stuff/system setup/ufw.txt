@@ -1,0 +1,16 @@
+# firewall
+
+sudo ufw enable			# need to enable to see connections
+sudo ufw disable			# disable
+sudo ufw status			# checks on current status
+
+sudo ufw reset			# reset to default
+
+sudo ufw status numbered	# check status numbered
+sudo ufw delete 5			# delete number 5
+
+
+
+sudo ufw allow 22/tcp		# ssh & sftp
+sudo ufw allow 5432/tcp		# postgres
+sudo ufw allow 6379/tcp		# redis

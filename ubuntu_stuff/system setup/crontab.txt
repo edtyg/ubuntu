@@ -1,0 +1,10 @@
+crontab to run cronjobs - job scheduler (to run stuff periodically at fixed times)
+
+crontab -e 		# edit crontab - built in select the first one if using for the first time
+crontab -l		# list all cronjobs
+
+
+
+can use this website to check on how * * * * * works
+
+https://crontab.guru/

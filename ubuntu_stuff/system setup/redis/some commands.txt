@@ -1,0 +1,70 @@
+######################
+### basic commands ###
+######################
+
+quit 						# quit client
+
+set name ed 				# key = name, value = ed
+set age 26 					# key = age, value = 26
+
+get name 					# get value of the key name
+get age					# get value of the key age
+
+del age 					# delete key age
+
+exists name 				# check if this key exists
+
+keys *					# return all keys
+
+flushall 					# delete all keys
+
+
+###################################
+### handling or adding expiries ###
+###################################
+
+ttl name 					# get time to live for key = name, reponse = -1 means no expiry
+
+expire name 10 				# set 10 seconds to expiry for key = name
+
+setex name 10 kyle 			# set key = name, value = kyle with 10 seconds to expiry
+
+
+
+#########################################
+### lists - values need not be unique ###
+#########################################
+
+lpush friends john			# create a list = friends with value = john  - lpush = add to start
+lrange friends 0 -1			# get all values in the list = friends
+rpush friends barb			# add to end of list
+
+lpop friends 				# removes 1st item of list - and prints value
+rpop friends 				# removes last item of list - and prints value
+
+
+
+#######################################
+### sets - values have to be unique ###
+#######################################
+
+sadd name john			# create a set with key = hobbies with member = john
+smembers name			# print out the set and the members
+
+srem john				# remove member john
+
+
+##############
+### hashes ###
+##############
+
+hset person name kyle 		# create a hash person, with name = kyle
+hset person age 26
+
+hget person name			# get name
+hget person age
+hgetall person			# get all 
+
+hdel person age			# delete age for hash = person
+
+hexists person age		# check if age exists

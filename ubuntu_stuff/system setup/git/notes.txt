@@ -1,0 +1,7 @@
+git is a version control system
+
+can check on changes over time - great to use for collabration in bigger groups
+
+command line vs gui 
+
+gui may not always be available

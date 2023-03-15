@@ -1,0 +1,12 @@
+[Unit]
+Description=Hello World
+
+[Service]
+# running in a venv
+ExecStart=/home/edgar/venv/deribit_trading/bin/python3 /home/edt/demo/hello.py
+Restart=always
+RestartSec=1
+User=root
+
+[Install]
+WantedBy=multi-user.target

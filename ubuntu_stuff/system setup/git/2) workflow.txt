@@ -1,0 +1,13 @@
+# workflow
+modified files -> staging area / index -> commit to repository -> push to branch (main branch or side branches)
+
+# check on files and can see which files are untracked i.e not added to staging area
+git status
+
+# adding files to staging area
+git add . 					# adding all files
+git add file.js 				# adding a single file
+git add file.js file2.js		# adding multiple files
+
+# list files in staging area
+git ls-files

@@ -1,0 +1,49 @@
+### rights ###
+--------- (total 9 dashes)
+owner-group-other
+rw-r--r--
+
+for example above:
+owner = Read & Write (rw-)
+group = Read (r--)
+other = Read (r--)
+
+# permission groups
+u owner
+g group
+o other
+
+# file permissions
+r read
+w write
+x execute
+
+ls -l filename													# prints out all permission info for that file
+-rw-r--r-- 1 root edgar 17369505 Mar 12 12:01 deribit_trading/eth_trading_algo.log		# example of file eth_trading_algo.log -> owner = root, group = edgar
+ls -l foldername 													# prints out all permission info of files in the folder
+
+chmod ugo+rwx foldername 											# for owners,groups,others give read,write,execute
+chmod ugo-x foldername 												# for ownsers,groups,others remove execute
+
+chgrp new_groupname filename											# change group for the specific file
+chgrp new_groupname foldername										# change group for the specific folder
+
+chown new_owner_name filename											# change owner for specific file
+chown new_owner_name foldername										# change owner for specif folder
+
+
+
+### useful methods ###
+
+sudo addgroup new_groupname											# creates a new group
+sudo groupdel existing_groupname										# deletes an existing group
+
+sudo adduser username groupname										# adds user to group
+sudo deluser user group												# deletes user from group
+
+groups 														# print list of all groups current logged in user is in
+groups user 													# list of all groups a specific user is in
+id user														# get info about user
+getent group groupname												# find out members of groupname
+getent group													# list all groups
+

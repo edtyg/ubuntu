@@ -1,0 +1,21 @@
+cd /etc/systemd/system					# change directory to the systemd path (this is the standard path)
+
+sudo touch hello.service				# create a service file named hello
+sudo nano hello.service					# edits the service file
+
+sudo systemctl daemon-reload				# reload service files to include the one u just created - always reload when u update any service files
+
+sudo systemctl start hello.service			# start service
+sudo systemctl stop hello.service			# stop service
+
+sudo systemctl status hello.service			# checking status of a particular service (ur code needs to have a continuously running loop)
+
+systemctl list-units 					# list units
+systemctl list-units |grep .service 		# list all .service
+
+sudo systemctl disable snapd.service		# disable service = not gonna start next time u reboot machine
+sudo systemctl enable snapd.service			# enable service = gonna start when reboot machine
+
+systemctl --failed 					# list all failed
+
+systemctl restart test.service			# restart service - after making some changes to your python script

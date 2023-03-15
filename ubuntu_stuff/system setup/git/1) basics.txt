@@ -1,0 +1,16 @@
+cd /home/xxx/								# change to directory in which you wish to clone your repository
+
+git clone https://github.com/edtyg/python.git			# clone an existing repository using http method - this auth method no longer supported. Try ssh instead
+
+
+ssh-keygen									# create a public/private rsa key pair
+
+/home/edgar/.ssh/								# standard folder location
+ls -a										# do this to list hidden files/folders
+
+###
+copy public key over to github
+
+
+git clone git@github.com:edtyg/python.git				# clone existing repo using ssh method
+ls -a										# see hidden files .git

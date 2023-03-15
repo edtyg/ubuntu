@@ -1,0 +1,10 @@
+# committing files with a message
+git commit -m "initial commit"
+
+# pushing
+git push
+
+
+# go back to a previous state of code
+git log 								# check your logs
+git checkout 2d85dcff41f1d526d0ea68311c304d21f3e3ae53 # find the hash frm logs

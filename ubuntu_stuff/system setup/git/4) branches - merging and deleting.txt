@@ -1,0 +1,37 @@
+# lists out all branches
+git branch # view local branches
+git branch -r # view remote branches
+git branch -a # view all branches
+
+# switch branches by branch name - if branch does not already exist, it will create a new branch
+git checkout main
+git checkout master
+
+
+# creating a new branch
+git checkout -b <branch-name>
+git commit -m "xxx"
+git push --set-upstream origin <branch-name> # new branch has no upstream branch
+
+
+###
+merging branch into main
+
+While you are working on your branch, 
+other developers may update the main branch with their branch. 
+This action means your branch is now out of date of the main branch and missing content. 
+You can merge the main branch into your branch by checking out your branch and using the same git merge command.
+
+git checkout main
+git merge <branch you are working on>
+git push
+
+###
+merging main into current branch you are working on
+git checkout <your current branch>
+git merge main
+git push
+
+
+# can delete branch when you are done
+git branch -d <branch you want to delete>

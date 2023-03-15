@@ -1,0 +1,11 @@
+https://redis.io/commands 			# to get redis commands
+
+sudo apt-get install redis			# install redis
+redis-cli 						# to enter redis client
+
+sudo netstat -lnp | grep redis		# check listening ip and ports
+
+sudo nano /etc/redis/redis.conf		# adjust the settings for redis
+comment out bind ip
+set protected mode no
+set firewall to allow port 6379

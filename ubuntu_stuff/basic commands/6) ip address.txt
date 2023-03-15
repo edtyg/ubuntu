@@ -1,0 +1,12 @@
+ping linuxcommand.org					# sends a ping
+ping 116.14.250.244					# sends a ping to an ip address
+
+
+ip addr							# shows current ip of your local system
+host myip.opendns.com resolver1.opendns.com 	# public ip address
+
+traceroute 116.14.250.244				# traces your route
+
+netstat -tulpn		
+ss -tulpn
+

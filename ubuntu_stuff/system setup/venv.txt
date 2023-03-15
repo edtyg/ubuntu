@@ -1,0 +1,13 @@
+### setting up python virtual environments in ubuntu ###
+### isolate your projects / versions / packages ###
+
+
+sudo apt install python3.10-venv 					# install first
+
+cd /home/edgar/venv							# change to the directory where u want to set it up first
+python3 -m venv project_test						# creates a new venv named project_test
+
+source /home/edgar/venv/project_test/bin/activate		# activate venv
+which python								# can check which python you are using
+
+deactivate									# deactivate venv

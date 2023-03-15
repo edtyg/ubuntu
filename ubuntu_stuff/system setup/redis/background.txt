@@ -1,0 +1,6 @@
+redis is a type of nosql database
+
+data is stored as a key/value pair
+
+data is stored in a working memory (ram) - which is very very fast
+instead of your standard drive (hard drive)

@@ -1,0 +1,56 @@
+##################
+### setting up ###
+##################
+postgres is a relational database system
+
+
+/etc/postgresql					# standard location
+/etc/postgresql/14/main				# version 14
+/etc/postgresql/14/main/postgresql.conf	# settings file here
+
+sudo apt update 					# update first
+sudo apt upgrade 					# upgrade first
+
+sudo apt install postgresql-client
+sudo apt install postgresql
+
+ss -nlt 						# check ports default is 5432
+
+sudo systemctl enable postgresql		# enable service
+sudo systemctl restart postgresql		# restart it
+
+systemctl postgres				# can check it
+systemctl postgres status			# check the status of postgres
+
+
+sudo su postgres					# log in as postgres username
+psql							# shell
+sudo su postgres psql				# can do this alternatively
+
+
+
+# once you are in the shell
+help							# see help							
+\?							# to see commands
+
+\l							# default databases					
+\du							# show users
+\password 						# this is to set new password
+
+
+# some commands need semi-colon
+CREATE USER test_ed WITH PASSWORD 'edtyg123';
+ALTER USER test_ed WITH SUPERUSER;
+
+
+###################################
+### enable external connections ###
+###################################
+192.168.1.117							# this is the ip address of your server
+
+sudo nano /etc/postgresql/14/main/pg_hba.conf 		# edit the postgres settings file under IPv4 and IPv6
+host all all 0.0.0.0/0 md5					# IPV4
+host all all ::0/0 md5						# IPV6
+
+sudo nano /etc/postgresql/14/main/postgresql.conf	# edit listen addresses
+listen_addresses = '*'

@@ -1,0 +1,9 @@
+history 			# previous commands
+du 				# directory usage
+
+crontab -l 			# shows list of cron jobs
+crontab -e 			# edit cron jobs select 1
+
+df 				# display file system - disk space
+free 				# amount of free memory
+exit 				# close terminal session
