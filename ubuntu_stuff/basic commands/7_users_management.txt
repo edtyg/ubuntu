@@ -1,0 +1,4 @@
+sudo adduser trader   # create user trader
+trader123
+
+less /etc/passwd      # see all users

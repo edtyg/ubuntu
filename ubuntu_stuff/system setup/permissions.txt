@@ -22,7 +22,7 @@ ls -l filename													# prints out all permission info for that file
 -rw-r--r-- 1 root edgar 17369505 Mar 12 12:01 deribit_trading/eth_trading_algo.log		# example of file eth_trading_algo.log -> owner = root, group = edgar
 ls -l foldername 													# prints out all permission info of files in the folder
 
-chmod ugo+rwx foldername 											# for owners,groups,others give read,write,execute
+chmod -R ugo+rwx foldername 											# for owners,groups,others give read,write,execute
 chmod ugo-x foldername 												# for ownsers,groups,others remove execute
 
 chgrp new_groupname filename											# change group for the specific file
