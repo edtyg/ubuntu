@@ -2,7 +2,7 @@
 Description=Hello World
 
 [Service]
-# running in a venv
+Environment="PYTHONPATH=/path/to/python/modules"
 ExecStart=/home/edgar/venv/deribit_trading/bin/python3 /home/edt/demo/hello.py
 Restart=always
 RestartSec=1

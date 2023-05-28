@@ -11,3 +11,15 @@ source /home/edgar/venv/project_test/bin/activate		# activate venv
 which python								# can check which python you are using
 
 deactivate									# deactivate venv
+
+
+
+
+#############
+
+add environment variable on activation
+
+1) create a bash script say env_vars.sh
+2) export PYTHONPATH=$PYTHONPATH:/home/edgar/github 		# add this to bash script where /home/edgar/github is what u want to add
+3) source /home/edgar/venv/deribit_trading/bin/env_vars.sh  # add this line to bin/activate file
+4) everytime u activate venv, will add this path 
