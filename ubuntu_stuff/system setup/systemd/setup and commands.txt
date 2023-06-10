@@ -11,11 +11,11 @@ sudo systemctl stop hello.service			# stop service
 sudo systemctl status hello.service			# checking status of a particular service (ur code needs to have a continuously running loop)
 
 systemctl list-units 					# list units
-systemctl list-units |grep .service 		# list all .service
+systemctl list-units |grep .service 			# list all .service
 
-sudo systemctl disable snapd.service		# disable service = not gonna start next time u reboot machine
+sudo systemctl disable snapd.service			# disable service = not gonna start next time u reboot machine
 sudo systemctl enable snapd.service			# enable service = gonna start when reboot machine
 
 systemctl --failed 					# list all failed
 
-systemctl restart test.service			# restart service - after making some changes to your python script
+systemctl restart test.service				# restart service - after making some changes to your python script

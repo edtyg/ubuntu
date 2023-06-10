@@ -1,17 +1,17 @@
 sudo apt update				# updates stuff
-sudo apt upgrade				# upgrades stuff
+sudo apt upgrade			# upgrades stuff
 sudo apt install xxx			# install apps
 sudo apt remove xxx			# uninstall apps
 
 sudo apt install python3-pip		# install pip
 sudo apt install xxx			# install other programs
 
-date 						# shows current date and timedf
-cal 						# calender
-df -H						# display file system - disk space
-free 						# amount of free memory
-exit 						# close terminal session
-sudo reboot					# restart system
+date 					# shows current date and timedf
+cal 					# calender
+df -H					# display file system - disk space
+free 					# amount of free memory
+exit 					# close terminal session
+sudo reboot				# restart system
 sudo shutdown				# shutdown
 
-uname						# system name, not user name
+uname					# system name, not user name

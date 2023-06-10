@@ -1,11 +1,11 @@
 # change directory to file location
 
 mkdir folder_name 				# creates folder at current directory
-mkdir folder_name/folder_name 		# creates folder in another folder in current directory
+mkdir folder_name/folder_name 			# creates folder in another folder in current directory
 
 rm filename  					# delete files
 rmdir dirname 					# delete folders/directories
-rm -r foldername					# delete folder and all files inside - !!! careful with this
+rm -r foldername				# delete folder and all files inside - !!! careful with this
 
 sudo touch filename.txt				# creates a file
 sudo nano filename.txt				# opens file and allows you to edit it

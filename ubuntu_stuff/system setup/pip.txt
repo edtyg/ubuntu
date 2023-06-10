@@ -2,9 +2,9 @@
 
 sudo apt install python3-pip
 
-pip list 						# list all packages installed
+pip list 					# list all packages installed
 pip install -r requirements.txt 		# install from requirements.txt file
 
-pip freeze						# show all installed packages and their versions
+pip freeze					# show all installed packages and their versions
 pip freeze > requirements.txt			# saves
 cat requirements.txt				# shows reqs

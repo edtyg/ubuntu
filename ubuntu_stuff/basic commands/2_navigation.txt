@@ -1,9 +1,9 @@
-pwd						# print working directory
-cd..						# up one directory
+pwd					# print working directory
+cd..					# up one directory
 cd /home/edgar				# change directory
-cd						# goes back to base directory
-cd - 						# previous directory
+cd					# goes back to base directory
+cd - 					# previous directory
 
-ls						# list files in current directory
-ls -a						# list all files including hidden ones
+ls					# list files in current directory
+ls -a					# list all files including hidden ones
 ls -al					# list all files incl hidden ones in a nice list

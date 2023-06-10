@@ -1,0 +1,39 @@
+##################
+### setting up ###
+##################
+mysql is a relational database system
+default port = 3306
+
+### update first ###
+sudo apt update 									# update first
+sudo apt upgrade 									# upgrade first
+
+### installation ###
+sudo apt install mysql-server
+/etc/mysql										# standard location
+/etc/mysql/mysql.conf.d/mysqld.cnf							# settings file here
+
+###################################
+### enable external connections ###
+###################################
+192.168.1.122										# this is the ip address of your server
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf 						# edit the mysql settings file
+bind-address = 0.0.0.0									# change this
+mysqlx-bind-address = 127.0.0.1								# leave this as it is
+
+ss -nlt 										# check ports default is 3306 for mysql
+sudo systemctl enable mysql								# enable service
+sudo systemctl restart mysql								# restart it
+systemctl mysql status									# check the status of postgres
+
+
+### settings ###
+sudo mysql -u root -p									# connect
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'Edtyg123'	# adjust root user password
+mysql_secure_installation								# install
+
+CREATE USER 'edgar'@'192.168.1.82' IDENTIFIED BY 'Edtyg@123';				# set up user
+CREATE DATABASE test;									# create database test
+GRANT ALL ON test.* TO 'edgar'@'192.168.1.82';
+
