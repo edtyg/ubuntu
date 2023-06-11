@@ -35,5 +35,5 @@ mysql_secure_installation								# install
 
 CREATE USER 'edgar'@'192.168.1.82' IDENTIFIED BY 'Edtyg@123';				# set up user
 CREATE DATABASE test;									# create database test
-GRANT ALL ON test.* TO 'edgar'@'192.168.1.82';
+GRANT ALL ON test.* TO 'edgar'@'192.168.1.82';						# grant access to user
 

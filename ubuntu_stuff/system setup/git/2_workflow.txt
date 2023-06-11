@@ -7,7 +7,7 @@ git status
 # adding files to staging area
 git add . 					# adding all files
 git add file.js 				# adding a single file
-git add file.js file2.js		# adding multiple files
+git add file.js file2.js			# adding multiple files
 
 # list files in staging area
 git ls-files

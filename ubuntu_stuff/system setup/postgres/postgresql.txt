@@ -5,44 +5,16 @@ postgres is a relational database system
 default port = 5432
 
 ### installation ###
-sudo apt update 					# update first
-sudo apt upgrade 					# upgrade first
+sudo apt update 						# update first
+sudo apt upgrade 						# upgrade first
 
 sudo apt install postgresql-client
 sudo apt install postgresql
 
 ### file location and service ###
-/etc/postgresql						# standard location
-/etc/postgresql/14/main					# version 14
-/etc/postgresql/14/main/postgresql.conf			# settings file here
-
-sudo systemctl enable postgresql			# enable service
-sudo systemctl restart postgresql			# restart it
-
-systemctl postgres					# can check it
-systemctl postgres status				# check the status of postgres
-
-
-ss -nlt 						# check ports default is 5432
-
-sudo su postgres					# log in as postgres username
-psql							# shell
-sudo su postgres psql					# can do this alternatively
-
-
-
-# once you are in the shell
-help							# see help							
-\?							# to see commands
-\l							# default databases					
-\du							# show users
-\password 						# this is to set new password
-
-
-# some commands need semi-colon
-CREATE USER test_ed WITH PASSWORD 'edtyg123';
-ALTER USER test_ed WITH SUPERUSER;
-
+/etc/postgresql							# standard location
+/etc/postgresql/14/main						# version 14
+/etc/postgresql/14/main/postgresql.conf				# settings file here
 
 ###################################
 ### enable external connections ###
@@ -55,3 +27,29 @@ host all all ::0/0 md5						# IPV6
 
 sudo nano /etc/postgresql/14/main/postgresql.conf		# edit listen addresses
 listen_addresses = '*'
+
+sudo systemctl enable postgresql				# enable service
+sudo systemctl restart postgresql				# restart it
+systemctl postgres status					# check the status of postgres
+
+
+ss -nlt 							# check ports default is 5432
+
+# testing out postgres on command line
+sudo su postgres						# log in as postgres username
+psql								# shell
+sudo su postgres psql						# can do this alternatively
+
+# once you are in the shell
+help								# see help							
+\?								# to see commands
+\l								# default databases					
+\du								# show users
+\password 							# this is to set new password
+
+
+# some commands need semi-colon
+CREATE USER test_ed WITH PASSWORD 'edtyg123';
+ALTER USER test_ed WITH SUPERUSER;
+
+
