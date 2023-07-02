@@ -1,0 +1,7 @@
+stopping instance without elastic ip address -> will be relocated a new ip address
+shutting down of system (same as above)
+
+assigning an elastic ip to a server that's already running -> will change current server's ip to the new 1
+(can't create a custom elastic ip)
+
+upgrading server that has an elastic ip assigned will not have a new ip assigned
