@@ -1,1 +1,4 @@
 https://docs.timescale.com/
+
+# follow instructions here
+https://docs.timescale.com/self-hosted/latest/install/installation-linux/

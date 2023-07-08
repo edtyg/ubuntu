@@ -11,7 +11,8 @@ sudo netstat -lnp | grep redis			# check listening ip and ports
 ### settings file here
 sudo nano /etc/redis/redis.conf			# adjust the settings for redis
 
-
+find # requirepass foobared
+for password
 
 ### comment out bind ip ###
 # bind 192.168.1.100 10.0.0.1
