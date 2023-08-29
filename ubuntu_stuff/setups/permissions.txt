@@ -1,7 +1,7 @@
 ### rights ###
---------- (total 9 dashes)
+--- --- --- (total 9 dashes)
 owner-group-other
-rw-r--r--
+rw- r-- r--
 
 for example above:
 owner = Read & Write (rw-)

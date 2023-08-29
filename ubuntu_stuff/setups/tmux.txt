@@ -1,0 +1,24 @@
+# terminal multiplexer for Unix-based operating systems
+# can split terminal window for separate tasks
+# will not kill processes if connection is lost
+
+
+# installation
+sudo apt-get install tmux
+tmux -V 				# checking on current version
+
+
+tmux list-sessions 			# list existing sessions
+tmux new-session -s session_name 	# creates a new session with session name
+tmux attach-session -t session_name	# attach to an existing session
+tmux detach				# detach from current session
+tmux kill-session -t session_name	# kill existing session
+
+
+# hotkeys - incase you have an active session running stuff
+crtl -b + d				# detach from session
+
+
+-t  	# target
+-n 	# name
+-s	# source

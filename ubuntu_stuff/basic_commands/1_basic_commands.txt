@@ -8,7 +8,7 @@ sudo apt install xxx			# install other programs
 
 date 					# shows current date and timedf
 cal 					# calender
-df -H					# display file system - disk space
+df -H					# display file system - disk space and which drive is mounted where
 free 					# amount of free memory
 exit 					# close terminal session
 sudo reboot				# restart system
