@@ -10,12 +10,20 @@ sudo ufw allow ssh
 
 
 ip addr 				# can lookup your ip address here - ssh default port is 22
-
 grep -i port /etc/ssh/sshd_config 	# can check port here
-
-sudo nano /etc/ssh/sshd_config		# can update file here - uncomment by taking out 
-					# higher security by changing default port
-
+sudo nano /etc/ssh/sshd_config		# can update file here - uncomment by taking out
 sudo systemctl restart sshd 		# restart after changing settings
-
 sudo ss -tulpn | grep ssh 		# check if listening on port correctly
+
+
+### adding key file ###
+ssh-keygen -t rsa -b 4096 		# overwrite file (if key exists)
+cd /home/user/.ssh			# cd to ssh folder for user
+
+id_rsa					# private key
+id_rsa.pub				# public key
+nano authorized_keys			# add in public key from id_rsa.pub to authorized_keys file (create if it doesnt exist)
+sudo systemctl restart ssh		# restart ssh service
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
