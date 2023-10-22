@@ -1,0 +1,9 @@
+ping www.binance.com				# sending pings
+ping 118.201.33.98				# sending pings
+
+traceroute www.binance.com			# list all hops to get to specified host
+
+ip a						# ip address
+
+
+netstat						# network statistics

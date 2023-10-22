@@ -1,0 +1,4 @@
+ssh -i /home/ubuntu/test2 ubuntu@18.143.114.195
+
+use pem file instead of ppk file
+rmb ip whitelisting

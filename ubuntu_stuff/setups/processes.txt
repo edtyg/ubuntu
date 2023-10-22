@@ -1,0 +1,6 @@
+ps 			# snapshot of current processes
+top			# display tasks
+htop			# display tasks interactive
+atop			# display tasks interactive
+
+kill [pid]		# kill processes with process id
